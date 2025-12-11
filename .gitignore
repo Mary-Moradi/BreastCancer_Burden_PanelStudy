@@ -1,0 +1,9 @@
+*.csv
+*.CSV
+*.xlsx
+*.xls
+*.json
+*.zip
+*.gz
+.DS_Store
+data/
