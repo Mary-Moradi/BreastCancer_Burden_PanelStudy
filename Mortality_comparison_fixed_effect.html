@@ -1,126 +1,122 @@
 <style> table.simpletable {border-top: 1px solid black; border-bottom: 1px solid black; border-collapse: collapse; font-family: 'Times New Roman';} table.simpletable td, table.simpletable th {border: none; padding: 5px 15px;} table.simpletable tr:first-child {border-bottom: 1px solid black;} </style><table class="simpletable">
 <caption>Model Comparison</caption>
 <tr>
-              <td></td>                <th>FE model 1</th>     <th>FE model 2</th>     <th>FE model 3</th>     <th>FE model 4</th>     <th>FE model 5</th>  
+                 <td></td>                   <th>FE model 1</th>     <th>FE model 2</th>     <th>FE model 3</th>     <th>FE model 4</th>     <th>FE model 5</th>  
 </tr>
 <tr>
-  <th>Dep. Variable</th>                <td>mortality</td>      <td>mortality</td>      <td>mortality</td>      <td>mortality</td>      <td>mortality</td>  
+  <th>Dep. Variable</th>                      <td>mortality</td>      <td>mortality</td>      <td>mortality</td>      <td>mortality</td>      <td>mortality</td>  
 </tr>
 <tr>
-  <th>Estimator</th>                    <td>PanelOLS</td>       <td>PanelOLS</td>       <td>PanelOLS</td>       <td>PanelOLS</td>       <td>PanelOLS</td>   
+  <th>Estimator</th>                          <td>PanelOLS</td>       <td>PanelOLS</td>       <td>PanelOLS</td>       <td>PanelOLS</td>       <td>PanelOLS</td>   
 </tr>
 <tr>
-  <th>No. Observations</th>               <td>3147</td>           <td>3147</td>           <td>3147</td>           <td>3147</td>           <td>3147</td>     
+  <th>No. Observations</th>                     <td>3147</td>           <td>3147</td>           <td>3147</td>           <td>3147</td>           <td>3147</td>     
 </tr>
 <tr>
-  <th>Cov. Est.</th>                    <td>Clustered</td>      <td>Clustered</td>      <td>Clustered</td>      <td>Clustered</td>      <td>Clustered</td>  
+  <th>Cov. Est.</th>                          <td>Clustered</td>      <td>Clustered</td>      <td>Clustered</td>      <td>Clustered</td>      <td>Clustered</td>  
+</tr>
+
+
+
+
+<tr>
+  <th>R-squared</th>
+<td>0.161</td><td>0.361</td><td>0.402</td><td>0.321</td><td>0.305</td>
 </tr>
 <tr>
-  <th>R-squared</th>                     <td>0.1591</td>         <td>0.3681</td>         <td>0.4330</td>         <td>0.4485</td>         <td>0.4500</td>    
+  <th>F-statistic</th>                         <td>282.48</td>         <td>289.40</td>         <td>284.39</td>         <td>220.06</td>         <td>202.86</td>    
 </tr>
 <tr>
-  <th>R-Squared (Within)</th>            <td>0.1613</td>         <td>0.3613</td>         <td>0.4021</td>         <td>0.3214</td>         <td>0.3059</td>    
+  <th>P-value (F-stat)</th>                    <td>0.000</td>         <td>0.000</td>         <td>0.000</td>         <td>0.000</td>         <td>0.000</td>    
 </tr>
 <tr>
-  <th>R-Squared (Between)</th>           <td>-0.8698</td>        <td>-1.7033</td>        <td>-1.5088</td>        <td>-1.5036</td>        <td>-1.7351</td>   
+  <th>=============================</th>    <td>============</td>   <td>============</td>   <td>============</td>   <td>============</td>   <td>============</td> 
 </tr>
 <tr>
-  <th>R-Squared (Overall)</th>           <td>-0.7037</td>        <td>-1.3912</td>        <td>-1.2002</td>        <td>-1.2154</td>        <td>-1.4263</td>   
+  <th>const</th>                               <td>2.229</td>        <td>18.347***</td>       <td>5.579</td>         <td>11.945*</td>        <td>12.661*</td>   
 </tr>
 <tr>
-  <th>F-statistic</th>                   <td>282.48</td>         <td>289.40</td>         <td>284.39</td>         <td>220.06</td>         <td>202.86</td>    
+  <th> </th>                                  <td>(0.396)</td>       <td>(3.685)</td>       <td>(0.844)</td>       <td>(1.891)</td>       <td>(1.929)</td>   
 </tr>
 <tr>
-  <th>P-value (F-stat)</th>              <td>0.0000</td>         <td>0.0000</td>         <td>0.0000</td>         <td>0.0000</td>         <td>0.0000</td>    
+  <th>ln(GDP_per_capita)</th>                <td>-0.000***</td>      <td>1.693e-05</td>     <td>-1.948e-05</td>     <td>-1.485e-05</td>     <td>-2.017e-05</td>  
 </tr>
 <tr>
-  <th>=======================</th>    <td>============</td>   <td>============</td>   <td>============</td>   <td>============</td>   <td>============</td> 
+  <th> </th>                                  <td>(-3.098)</td>      <td>(0.297)</td>       <td>(-0.426)</td>      <td>(-0.336)</td>      <td>(-0.433)</td>  
 </tr>
 <tr>
-  <th>const</th>                         <td>2.2299</td>        <td>18.347***</td>       <td>5.5797</td>         <td>11.945*</td>        <td>12.661*</td>   
+  <th>urbanization_rate</th>                  <td>0.343***</td>      <td>0.254***</td>      <td>0.164**</td>       <td>0.165**</td>       <td>0.163**</td>   
 </tr>
 <tr>
-  <th> </th>                            <td>(0.3968)</td>       <td>(3.6858)</td>       <td>(0.8442)</td>       <td>(1.8913)</td>       <td>(1.9297)</td>   
+  <th> </th>                                  <td>(3.798)</td>       <td>(3.423)</td>       <td>(2.312)</td>       <td>(2.284)</td>       <td>(2.258)</td>   
 </tr>
 <tr>
-  <th>log_gdp</th>                     <td>-0.0001***</td>      <td>1.693e-05</td>     <td>-1.948e-05</td>     <td>-1.485e-05</td>     <td>-2.017e-05</td>  
+  <th>log_gdp_is_oecd</th>                    <td>        </td>      <td>-0.000***</td>      <td>-8.85e-05</td>      <td>-0.000**</td>     <td>-8.193e-05</td>  
 </tr>
 <tr>
-  <th> </th>                            <td>(-3.0986)</td>      <td>(0.2975)</td>       <td>(-0.4268)</td>      <td>(-0.3364)</td>      <td>(-0.4333)</td>  
+  <th> </th>                                  <td>        </td>       <td>(-2.885)</td>      <td>(-1.634)</td>      <td>(-2.015)</td>      <td>(-1.514)</td>  
 </tr>
 <tr>
-  <th>urban_pop</th>                    <td>0.3436***</td>      <td>0.2549***</td>      <td>0.1648**</td>       <td>0.1656**</td>       <td>0.1638**</td>   
+  <th>pop_65</th>                             <td>        </td>      <td>-0.644***</td>     <td>-0.719***</td>     <td>-0.677***</td>     <td>-0.685***</td>  
 </tr>
 <tr>
-  <th> </th>                            <td>(3.7980)</td>       <td>(3.4230)</td>       <td>(2.3126)</td>       <td>(2.2841)</td>       <td>(2.2583)</td>   
+  <th> </th>                                  <td>        </td>       <td>(-3.049)</td>      <td>(-3.632)</td>      <td>(-3.351)</td>      <td>(-3.380)</td>  
 </tr>
 <tr>
-  <th>log_gdp_is_oecd</th>              <td>        </td>      <td>-0.0002***</td>      <td>-8.85e-05</td>      <td>-0.0001**</td>     <td>-8.193e-05</td>  
+  <th>dm_high_aging_society</th>              <td>        </td>        <td>-1.229</td>       <td>-1.696*</td>        <td>-1.448</td>        <td>-1.279</td>   
 </tr>
 <tr>
-  <th> </th>                            <td>        </td>       <td>(-2.8859)</td>      <td>(-1.6346)</td>      <td>(-2.0158)</td>      <td>(-1.5142)</td>  
+  <th> </th>                                  <td>        </td>       <td>(-1.231)</td>      <td>(-1.735)</td>      <td>(-1.442)</td>      <td>(-1.245)</td>  
 </tr>
 <tr>
-  <th>pop_65</th>                       <td>        </td>      <td>-0.6446***</td>     <td>-0.7196***</td>     <td>-0.6770***</td>     <td>-0.6852***</td>  
+  <th>fertility</th>                          <td>        </td>      <td>-2.499***</td>     <td>-2.210***</td>     <td>-2.061***</td>     <td>-2.010***</td>  
 </tr>
 <tr>
-  <th> </th>                            <td>        </td>       <td>(-3.0499)</td>      <td>(-3.6321)</td>      <td>(-3.3516)</td>      <td>(-3.3806)</td>  
+  <th> </th>                                  <td>        </td>       <td>(-5.073)</td>      <td>(-4.421)</td>      <td>(-4.025)</td>      <td>(-3.975)</td>  
 </tr>
 <tr>
-  <th>dm_high_aging_society</th>        <td>        </td>        <td>-1.2294</td>       <td>-1.6963*</td>        <td>-1.4489</td>        <td>-1.2797</td>   
+  <th>bmi</th>                                <td>        </td>       <td>        </td>       <td>60.440***</td>      <td>51.853***</td>      <td>51.668***</td>  
 </tr>
 <tr>
-  <th> </th>                            <td>        </td>       <td>(-1.2315)</td>      <td>(-1.7359)</td>      <td>(-1.4425)</td>      <td>(-1.2456)</td>  
+  <th> </th>                                  <td>        </td>       <td>        </td>       <td>(3.554)</td>       <td>(3.381)</td>       <td>(3.346)</td>   
 </tr>
 <tr>
-  <th>fertility</th>                    <td>        </td>      <td>-2.4991***</td>     <td>-2.2101***</td>     <td>-2.0616***</td>     <td>-2.0105***</td>  
+  <th>female_smoking</th>                     <td>        </td>       <td>        </td>       <td>0.150***</td>      <td>0.151***</td>      <td>0.152***</td>  
 </tr>
 <tr>
-  <th> </th>                            <td>        </td>       <td>(-5.0735)</td>      <td>(-4.4219)</td>      <td>(-4.0252)</td>      <td>(-3.9753)</td>  
+  <th> </th>                                  <td>        </td>       <td>        </td>       <td>(3.956)</td>       <td>(3.917)</td>       <td>(3.928)</td>   
 </tr>
 <tr>
-  <th>bmi</th>                          <td>        </td>       <td>        </td>       <td>60.440***</td>      <td>51.853***</td>      <td>51.668***</td>  
+  <th>health_exp</th>                         <td>        </td>       <td>        </td>       <td>        </td>       <td>-0.203*</td>       <td>-0.199*</td>   
 </tr>
 <tr>
-  <th> </th>                            <td>        </td>       <td>        </td>       <td>(3.5541)</td>       <td>(3.3810)</td>       <td>(3.3463)</td>   
+  <th> </th>                                  <td>        </td>       <td>        </td>       <td>        </td>       <td>(-1.753)</td>      <td>(-1.732)</td>  
 </tr>
 <tr>
-  <th>smoking</th>                      <td>        </td>       <td>        </td>       <td>0.1500***</td>      <td>0.1518***</td>      <td>0.1524***</td>  
+  <th>internet_penetration</th>               <td>        </td>       <td>        </td>       <td>        </td>        <td>-0.017</td>        <td>-0.018</td>   
 </tr>
 <tr>
-  <th> </th>                            <td>        </td>       <td>        </td>       <td>(3.9565)</td>       <td>(3.9171)</td>       <td>(3.9286)</td>   
+  <th> </th>                                  <td>        </td>       <td>        </td>       <td>        </td>       <td>(-1.428)</td>      <td>(-1.539)</td>  
 </tr>
 <tr>
-  <th>health_exp</th>                   <td>        </td>       <td>        </td>       <td>        </td>       <td>-0.2037*</td>       <td>-0.1997*</td>   
+  <th>female_labor_rate</th>                  <td>        </td>       <td>        </td>       <td>        </td>        <td>-0.059</td>        <td>-0.046</td>   
 </tr>
 <tr>
-  <th> </th>                            <td>        </td>       <td>        </td>       <td>        </td>       <td>(-1.7535)</td>      <td>(-1.7324)</td>  
+  <th> </th>                                  <td>        </td>       <td>        </td>       <td>        </td>       <td>(-1.216)</td>      <td>(-0.882)</td>  
 </tr>
 <tr>
-  <th>internet</th>                     <td>        </td>       <td>        </td>       <td>        </td>        <td>-0.0173</td>        <td>-0.0182</td>   
+  <th>female_labor_rate * is_oecd</th>        <td>        </td>       <td>        </td>       <td>        </td>       <td>        </td>        <td>-0.105</td>   
 </tr>
 <tr>
-  <th> </th>                            <td>        </td>       <td>        </td>       <td>        </td>       <td>(-1.4283)</td>      <td>(-1.5393)</td>  
+  <th> </th>                                  <td>        </td>       <td>        </td>       <td>        </td>       <td>        </td>       <td>(-0.667)</td>  
 </tr>
 <tr>
-  <th>labor_rate</th>                   <td>        </td>       <td>        </td>       <td>        </td>        <td>-0.0595</td>        <td>-0.0469</td>   
+  <th>===============================</th> <td>==============</td> <td>==============</td> <td>==============</td> <td>==============</td> <td>==============</td>
 </tr>
 <tr>
-  <th> </th>                            <td>        </td>       <td>        </td>       <td>        </td>       <td>(-1.2162)</td>      <td>(-0.8826)</td>  
+  <th>Effects</th>                             <td>Entity</td>         <td>Entity</td>         <td>Entity</td>         <td>Entity</td>         <td>Entity</td>    
 </tr>
 <tr>
-  <th>labor_rate * is_oecd</th>         <td>        </td>       <td>        </td>       <td>        </td>       <td>        </td>        <td>-0.1058</td>   
-</tr>
-<tr>
-  <th> </th>                            <td>        </td>       <td>        </td>       <td>        </td>       <td>        </td>       <td>(-0.6671)</td>  
-</tr>
-<tr>
-  <th>=========================</th> <td>==============</td> <td>==============</td> <td>==============</td> <td>==============</td> <td>==============</td>
-</tr>
-<tr>
-  <th>Effects</th>                       <td>Entity</td>         <td>Entity</td>         <td>Entity</td>         <td>Entity</td>         <td>Entity</td>    
-</tr>
-<tr>
-  <th></th>                               <td>Time</td>           <td>Time</td>           <td>Time</td>           <td>Time</td>           <td>Time</td>     
+  <th></th>                                     <td>Time</td>           <td>Time</td>           <td>Time</td>           <td>Time</td>           <td>Time</td>     
 </tr>
 </table><br/><br/>T-stats reported in parentheses<br><i>Note: Standard errors in parentheses. * p<0.1, ** p<0.05, *** p<0.01</i>
